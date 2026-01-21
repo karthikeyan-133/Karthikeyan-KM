@@ -39,15 +39,19 @@ export default function ContactSection() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    // Construct mailto link
+    const mailtoLink = `mailto:karthikeyankm.karthi@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+    )}`;
+
+    // Open email client
+    window.location.href = mailtoLink;
 
     toast({
-      title: "Message sent!",
-      description: "Thanks for reaching out. I'll get back to you soon.",
+      title: "Opening email client...",
+      description: "Please send the pre-filled email to connect with me.",
     });
 
-    setFormData({ name: '', email: '', subject: '', message: '' });
     setIsSubmitting(false);
   };
 
