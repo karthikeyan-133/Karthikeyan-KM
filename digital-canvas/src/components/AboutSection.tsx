@@ -104,12 +104,12 @@ export default function AboutSection() {
               className="relative group"
             >
               <div className="absolute inset-0 bg-primary/20 rounded-3xl rotate-3 transition-transform group-hover:rotate-6" />
-              <div className="relative glass-card p-10 rounded-3xl border-primary/20 bg-card/80 backdrop-blur-xl">
-                <div className="flex items-center gap-6 mb-8">
-                  <div className="p-4 rounded-full bg-primary text-primary-foreground shadow-lg shadow-primary/30">
-                    <Code2 className="w-8 h-8" />
+              <div className="relative glass-card p-6 md:p-10 rounded-3xl border-primary/20 bg-card/80 backdrop-blur-xl">
+                <div className="flex items-center gap-4 md:gap-6 mb-6 md:mb-8">
+                  <div className="p-3 md:p-4 rounded-full bg-primary text-primary-foreground shadow-lg shadow-primary/30">
+                    <Code2 className="w-6 h-6 md:w-8 md:h-8" />
                   </div>
-                  <h3 className="text-4xl font-bold uppercase tracking-tight">Philosophy</h3>
+                  <h3 className="text-2xl md:text-4xl font-bold uppercase tracking-tight">Philosophy</h3>
                 </div>
                 <p className="text-lg text-muted-foreground leading-relaxed font-medium">
                   I believe in writing <span className="text-foreground border-b-2 border-accent">clean, maintainable code</span> that stands the test of time.
@@ -179,16 +179,16 @@ export default function AboutSection() {
                     }`} />
 
                   <div className="group">
-                    <span className="text-6xl font-black text-foreground/5 select-none absolute -top-10 -left-6 -z-10 group-hover:text-foreground/10 transition-colors">
+                    <span className="text-4xl md:text-6xl font-black text-foreground/5 select-none absolute -top-8 md:-top-10 left-0 md:-left-6 -z-10 group-hover:text-foreground/10 transition-colors">
                       {item.year}
                     </span>
-                    <div className={`p-8 rounded-3xl border transition-all duration-300 ${item.current
-                        ? 'bg-gradient-to-br from-card to-card/50 border-accent/20 hover:border-accent/40'
-                        : 'bg-transparent border-transparent hover:bg-card/30 hover:border-border'
+                    <div className={`p-6 md:p-8 rounded-3xl border transition-all duration-300 ${item.current
+                      ? 'bg-gradient-to-br from-card to-card/50 border-accent/20 hover:border-accent/40'
+                      : 'bg-transparent border-transparent hover:bg-card/30 hover:border-border'
                       }`}>
-                      <div className="flex items-baseline justify-between mb-2">
-                        <h4 className="text-2xl font-bold text-foreground group-hover:text-primary transition-colors">{item.title}</h4>
-                        <span className="font-mono text-sm text-muted-foreground">{item.year}</span>
+                      <div className="flex flex-col md:flex-row md:items-baseline justify-between mb-2">
+                        <h4 className="text-xl md:text-2xl font-bold text-foreground group-hover:text-primary transition-colors">{item.title}</h4>
+                        <span className="font-mono text-xs md:text-sm text-muted-foreground mt-1 md:mt-0">{item.year}</span>
                       </div>
                       <p className="text-lg text-muted-foreground font-medium">{item.description}</p>
                       {item.current && (

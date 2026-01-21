@@ -87,7 +87,7 @@ const Resume = () => {
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5 }}
-                    className="bg-card/50 backdrop-blur-md border border-border/50 rounded-xl p-8 md:p-12 shadow-2xl relative overflow-hidden"
+                    className="bg-card/50 backdrop-blur-md border border-border/50 rounded-xl p-6 md:p-12 shadow-2xl relative overflow-hidden"
                 >
                     {/* Decorative Top Border */}
                     <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-purple-500 to-accent" />
@@ -95,7 +95,7 @@ const Resume = () => {
                     {/* Resume Header */}
                     <header className="flex flex-col md:flex-row justify-between items-center md:items-start border-b border-border/50 pb-8 mb-8 gap-6 text-center md:text-left">
                         <div className="space-y-4">
-                            <h1 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
+                            <h1 className="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
                                 Karthikeyan K M
                             </h1>
                             <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 text-sm text-muted-foreground">

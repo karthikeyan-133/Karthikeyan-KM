@@ -51,7 +51,7 @@ export default function Navbar() {
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
           ? 'py-4 bg-background/60 backdrop-blur-xl border-b border-white/5 shadow-sm'
-          : 'py-8 bg-transparent'
+          : 'py-6 md:py-8 bg-transparent'
           }`}
       >
         <nav className="container px-4 md:px-6 flex items-center justify-between">

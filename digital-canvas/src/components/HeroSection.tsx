@@ -20,7 +20,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="hero" className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden">
       <HeroCanvas />
 
       {/* Floating Decorative Elements (Reference Style) */}
@@ -86,12 +86,12 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-5xl sm:text-6xl md:text-8xl font-black tracking-tighter leading-[0.9] uppercase"
+            className="text-4xl sm:text-6xl md:text-8xl font-black tracking-tighter leading-[0.95] md:leading-[0.9] uppercase"
           >
-            <span className="block text-2xl sm:text-3xl md:text-4xl text-accent font-medium mb-6 tracking-normal normal-case font-mono">Hi, I'm Karthikeyan K M</span>
+            <span className="block text-xl sm:text-3xl md:text-4xl text-accent font-medium mb-4 md:mb-6 tracking-normal normal-case font-mono">Hi, I'm Karthikeyan K M</span>
             <span className="text-foreground block">I Build </span>
-            <span className="gradient-text block mt-2">Scalable</span>
-            <span className="text-foreground block mt-2">Web Products</span>
+            <span className="gradient-text block mt-1 md:mt-2">Scalable</span>
+            <span className="text-foreground block mt-1 md:mt-2">Web Products</span>
           </motion.h1>
 
           {/* Subtitle */}
@@ -99,7 +99,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed"
+            className="text-base md:text-xl text-muted-foreground max-w-2xl leading-relaxed px-4 md:px-0"
           >
             Full-Stack MERN Developer based in India. <br className="hidden md:block" />
             Crafting <span className="text-foreground font-semibold">immersive digital experiences</span> with <span className="text-foreground font-semibold">code & design</span>.
@@ -110,12 +110,12 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex flex-col sm:flex-row gap-6 pt-4"
+            className="flex flex-col sm:flex-row gap-4 md:gap-6 pt-2 md:pt-4 w-full sm:w-auto"
           >
-            <Button className="rounded-full px-8 h-14 text-lg font-bold bg-foreground text-background hover:bg-white/90 shadow-glow-sm" onClick={scrollToProjects}>
+            <Button className="rounded-full px-8 h-12 md:h-14 text-base md:text-lg font-bold bg-foreground text-background hover:bg-white/90 shadow-glow-sm w-full sm:w-auto" onClick={scrollToProjects}>
               Selected Works
             </Button>
-            <Button variant="outline" className="rounded-full px-8 h-14 text-lg font-medium border-muted-foreground/30 hover:bg-muted/10" onClick={scrollToContact}>
+            <Button variant="outline" className="rounded-full px-8 h-12 md:h-14 text-base md:text-lg font-medium border-muted-foreground/30 hover:bg-muted/10 w-full sm:w-auto" onClick={scrollToContact}>
               Let's Talk
             </Button>
           </motion.div>

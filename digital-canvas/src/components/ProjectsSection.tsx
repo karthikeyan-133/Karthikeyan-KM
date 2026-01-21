@@ -150,7 +150,7 @@ function FeaturedProject({ project, index, onClick }: { project: Project; index:
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.8 }}
-      className={`flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-8 lg:gap-20 items-center mb-32 group cursor-pointer`}
+      className={`flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-8 lg:gap-20 items-center mb-16 md:mb-32 group cursor-pointer`}
       onClick={onClick}
     >
       {/* Image Side */}
@@ -319,7 +319,7 @@ export default function ProjectsSection() {
   const otherProjects = projects.filter(p => !p.featured && (activeCategory === 'all' || p.category.includes(activeCategory)));
 
   return (
-    <section id="projects" ref={sectionRef} className="relative py-24 md:py-32 overflow-hidden bg-background">
+    <section id="projects" ref={sectionRef} className="relative py-16 md:py-32 overflow-hidden bg-background">
 
       <div className="container px-4 md:px-6">
         {/* Main Header */}
@@ -327,21 +327,21 @@ export default function ProjectsSection() {
           initial={{ opacity: 0, y: 40 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="mb-32 text-center"
+          className="mb-16 md:mb-32 text-center"
         >
-          <h2 className="text-[12vw] md:text-[8rem] font-black uppercase tracking-tighter leading-none opacity-5 select-none absolute top-10 left-1/2 -translate-x-1/2 whitespace-nowrap pointer-events-none">
+          <h2 className="text-[15vw] md:text-[8rem] font-black uppercase tracking-tighter leading-none opacity-5 select-none absolute top-10 left-1/2 -translate-x-1/2 whitespace-nowrap pointer-events-none">
             Workroom
           </h2>
           <div className="relative z-10">
-            <span className="inline-block px-4 py-1.5 rounded-full border-2 border-primary text-primary font-bold uppercase tracking-widest text-xs mb-8">Selected Portfolio</span>
-            <h2 className="text-5xl md:text-8xl font-black uppercase tracking-tight">
+            <span className="inline-block px-4 py-1.5 rounded-full border-2 border-primary text-primary font-bold uppercase tracking-widest text-xs mb-4 md:mb-8">Selected Portfolio</span>
+            <h2 className="text-4xl md:text-8xl font-black uppercase tracking-tight">
               Crafting <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-white to-primary animate-gradient-x">Digital Value</span>
             </h2>
           </div>
         </motion.div>
 
         {/* Featured Projects (Spotlight Layout) */}
-        <div className="mb-32">
+        <div className="mb-16 md:mb-32">
           {featuredProjects.map((project, index) => (
             <FeaturedProject
               key={project.id}
