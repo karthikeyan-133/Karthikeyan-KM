@@ -141,6 +141,30 @@ const projects: Project[] = [
     githubUrl: '#',
     featured: false,
   },
+  {
+    id: '11',
+    title: 'Kodeline',
+    description: 'AI-powered social media content optimization and analytics platform.',
+    longDescription: 'A detailed analytics dashboard "Kodeline" for tracking social media performance. Features include real-time engagement monitoring, follower growth tracking, and AI-driven content optimization suggestions to maximize reach.',
+    techStack: ['React', 'Node.js', 'PostgreSQL', 'Tailwind', 'Recharts'],
+    category: ['saas', 'ai', 'business'],
+    image: '/images/kodeline-dashboard.png',
+    demoUrl: '#',
+    githubUrl: '#',
+    featured: false,
+  },
+  {
+    id: '12',
+    title: 'SKEN AI',
+    description: 'Centralized AI agent orchestration and system administration platform.',
+    longDescription: 'A powerful AI management dashboard "SKEN AI" that orchestrates intelligent agents across multiple businesses. Features include real-time system administration, global conversation monitoring, revenue analytics, and a direct interface for AI agent configuration.',
+    techStack: ['React', 'Node.js', 'Python', 'Tailwind', 'OpenAI'],
+    category: ['ai', 'saas', 'admin'],
+    image: '/images/sken-ai-dashboard.png',
+    demoUrl: '#',
+    githubUrl: '#',
+    featured: false,
+  },
 ];
 
 const categories: { value: ProjectCategory; label: string }[] = [
