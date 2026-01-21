@@ -129,6 +129,18 @@ const projects: Project[] = [
     githubUrl: '#',
     featured: false,
   },
+  {
+    id: '10',
+    title: 'Heal & Grow Psychology Site',
+    description: 'Community platform for mental wellness and psychology services.',
+    longDescription: 'A dedicated platform "Heal & Grow" connecting clients with psychology professionals. Features include service booking, client testimonials, problem categorization, and a hiring portal for expanding the team.',
+    techStack: ['React', 'Node.js', 'Express', 'Tailwind', 'MongoDB'],
+    category: ['business', 'saas', 'education'],
+    image: '/images/heal-and-grow.png',
+    demoUrl: '#',
+    githubUrl: '#',
+    featured: false,
+  },
 ];
 
 const categories: { value: ProjectCategory; label: string }[] = [
