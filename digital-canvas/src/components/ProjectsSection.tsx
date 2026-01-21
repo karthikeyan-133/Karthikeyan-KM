@@ -165,6 +165,18 @@ const projects: Project[] = [
     githubUrl: '#',
     featured: false,
   },
+  {
+    id: '13',
+    title: 'AI Agent Hub',
+    description: 'Multi-channel AI agent management and customer engagement platform.',
+    longDescription: 'A comprehensive admin panel "AI Agent Hub" for managing AI interactions across WhatsApp, Email, and Web Chat. Features include a centralized inbox, appointment scheduling, order tracking, and detailed performance insights for automated customer support.',
+    techStack: ['React', 'Node.js', 'PostgreSQL', 'Tailwind', 'Redis'],
+    category: ['ai', 'saas', 'admin'],
+    image: '/images/ai-agent-hub-dashboard.png',
+    demoUrl: '#',
+    githubUrl: '#',
+    featured: false,
+  },
 ];
 
 const categories: { value: ProjectCategory; label: string }[] = [
