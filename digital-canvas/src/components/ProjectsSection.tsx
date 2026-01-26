@@ -177,6 +177,30 @@ const projects: Project[] = [
     githubUrl: '#',
     featured: false,
   },
+  {
+    id: '14',
+    title: 'TeleFlow CRM',
+    description: 'AI-powered telecalling CRM with intelligent script generation.',
+    longDescription: 'A comprehensive telecalling workspace "TeleFlow" featuring an AI script generator that adapts to customer responses. Includes call queue management, outcome tracking, follow-up scheduling, and managing customer data efficiently.',
+    techStack: ['React', 'Node.js', 'MySQL', 'Tailwind', 'OpenAI'],
+    category: ['ai', 'saas', 'business'],
+    image: '/images/teleflow-crm.png',
+    demoUrl: '#',
+    githubUrl: '#',
+    featured: false,
+  },
+  {
+    id: '15',
+    title: 'Kodeline Agency',
+    description: 'Premium agency website showcasing high-performance SaaS engineering.',
+    longDescription: 'The official digital presence for Kodeline, establishing a brand identity centered on "Engineering in Action". Features a dark-themed, immersive interface with complex animations to demonstrate expertise in enterprise automation, system architecture, and next-gen web development.',
+    techStack: ['React', 'Framer Motion', 'Tailwind', 'Vite'],
+    category: ['business', 'saas'],
+    image: '/images/kodeline-dev-site.png',
+    demoUrl: '#',
+    githubUrl: '#',
+    featured: false,
+  },
 ];
 
 const categories: { value: ProjectCategory; label: string }[] = [
